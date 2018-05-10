@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menu List by [Category]</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+        <ion-col col-1 push-11>
+            <ion-icon (click)="openMenuList()" name="ios-list-box-outline"></ion-icon>
+        </ion-col>
+        <ion-col col-1 push-9>
+          <ion-icon name="ios-grid-outline"></ion-icon>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        <button ion-button block (click)="openMenuDetails()">Menu A</button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button block (click)="openMenuDetails()">Menu B</button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button block (click)="openMenuDetails()">Menu C</button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button block (click)="openMenuDetails()">Menu D</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

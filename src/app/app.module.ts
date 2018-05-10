@@ -6,11 +6,23 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { MenuCategoryPage } from '../pages/menu-category/menu-category';
+import { MenuListPage } from '../pages/menu-list/menu-list';
+import { MenuGridPage } from '../pages/menu-grid/menu-grid';
+import { MenuDetailsPage } from '../pages/menu-details/menu-details';
+import { RecommendListPage } from '../pages/recommend-list/recommend-list';
+import { RecommendGridPage } from '../pages/recommend-grid/recommend-grid';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    MenuCategoryPage, 
+    MenuListPage, 
+    MenuGridPage, 
+    MenuDetailsPage, 
+    RecommendListPage, 
+    RecommendGridPage, 
   ],
   imports: [
     BrowserModule,
@@ -19,7 +31,13 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    MenuCategoryPage, 
+    MenuListPage, 
+    MenuGridPage, 
+    MenuDetailsPage, 
+    RecommendListPage, 
+    RecommendGridPage, 
   ],
   providers: [
     StatusBar,

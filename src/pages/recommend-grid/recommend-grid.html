@@ -1,0 +1,36 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>menu-grid</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-grid>
+      <ion-row>
+          <ion-col col-1 push-11>
+              <ion-icon (click)="openMenuList()" name="ios-list-box-outline"></ion-icon>
+          </ion-col>
+          <ion-col col-1 push-9>
+            <ion-icon name="ios-grid-outline"></ion-icon>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-3>
+          <button ion-button block (click)="openMenuDetails()">Recommend A</button>
+        </ion-col>
+        <ion-col col-3>
+          <button ion-button block (click)="openMenuDetails()">Recommend B</button>
+        </ion-col>
+        <ion-col col-3>
+          <button ion-button block (click)="openMenuDetails()">Recommend C</button>
+        </ion-col>
+        <ion-col col-3>
+          <button ion-button block (click)="openMenuDetails()">Recommend D</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  
