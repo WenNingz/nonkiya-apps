@@ -6,15 +6,19 @@
   </ion-header>
 
   <ion-content>
-    <ion-list>
-      <button ion-item menuClose detail-none *ngFor="let p of appPages" (click)="openPage(p)">
-        <ion-icon item-start [name]="p.icon"></ion-icon>
+      <ion-card>
+        <img src="./assets/imgs/sidebar.jpg"/>
+      </ion-card>
+      <ion-list>
+      <button class="sidebarBGColor sidebarFontColor"ion-item menuClose detail-none *ngFor="let p of appPages" [class.activeHighLight]="checkActive(p)" (click)="openPage(p)">
+        <!-- <ion-icon item-start [name]="p.icon"></ion-icon> -->
         {{p.title}}
       </button>
-            <button ion-item menuClose *ngFor="let p of menuPages" (click)="openPage(p)">
-              <ion-icon item-start [name]="p.icon"></ion-icon>
-              {{p.title}}
-            </button>
+      <button ion-item menuClose *ngFor="let p of menuPages" (click)="openPage(p)">
+        <!-- <ion-icon item-start [name]="p.icon"></ion-icon> -->
+        <img [src]="p.image" class="imageSize">
+        {{p.title}}
+      </button>
     </ion-list>
   </ion-content>
 </ion-menu>
