@@ -9,7 +9,6 @@ import { RecommendListPage } from '../recommend-list/recommend-list';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
   constructor(public navCtrl: NavController) {
     
   }
