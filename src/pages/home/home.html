@@ -2,16 +2,18 @@
   <header></header>
 </ion-header>
 
-<ion-content id="home-content" padding>
-  <ion-grid>
-    <ion-row>
-      <ion-col col-6>
-        <button ion-button block (click)="openMenuCategory()">Menu</button>
-      </ion-col>
-      <ion-col col-6>
-        <button ion-button block (click)="openRecommendMenu()">Recommend</button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+
+<ion-content padding>
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12 col-md-6 *ngFor="let image of [1,2]">
+            <a (click)="openMenuCategory()">
+                <img [src]="'./assets/imgs/' + image + '.png'" style="width : 100% ; height : 100%"  >
+            </a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>
 
