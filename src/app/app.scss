@@ -14,25 +14,3 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-
-ion-card {
-    margin: 0 !important;
-    width: 100% !important;
-}
-
-.activeHighLight {
-    background-color: map-get($colors, light);
-}
-
-.imageSize {
-    width: 25px !important;
-    height: 25px !important;
-}
-
-.sidebarBGColor {
-    background-color: #D05728 !important;
-}
-
-.sidebarFontColor {
-    color: map-get($colors, light) !important;
-}
