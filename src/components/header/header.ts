@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServiceProvider } from '../../providers/service/service'
 
 /**
  * Generated class for the HeaderComponent component.
@@ -12,11 +13,11 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  text: string;
-
-  constructor() {
-    console.log('Hello HeaderComponent Component');
-    this.text = 'Hello World';
+  constructor(public service: ServiceProvider) {
+    this.service.updateLang("EN");
   }
 
+  updateLang(val: string){
+    this.service.updateLang(val);
+  }
 }
