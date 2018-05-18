@@ -2,7 +2,11 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { MenuListPage } from '../menu-list/menu-list';
-import { MenuGridPage } from '../menu-grid/menu-grid';
+
+import data from '../../assets/data/categoryCode';
+import localizationData from '../../assets/data/localization';
+import { Subscription } from 'rxjs/Subscription';
+import { ServiceProvider }from '../../providers/service/service';
 
 @Component({
   selector: 'page-menu-category',
@@ -10,9 +14,28 @@ import { MenuGridPage } from '../menu-grid/menu-grid';
 })
 export class MenuCategoryPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  categories: string[] = data;
+  localization: any = localizationData;
+  subs: Subscription[] = [];
+  currentLang: string = "";
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
+    console.log(this.categories);
+    this.subs.push(
+      this._service.currentLang$.subscribe(
+        res => {
+          this.currentLang = res;
+        }
+      )
+    )
   }
 
+  ionViewWillLeave(){
+    this.subs.forEach(sub => {
+      sub.unsubscribe();
+    })
+  }
+  
   openMenuList() { 
     this.navCtrl.setRoot(MenuListPage);
   }

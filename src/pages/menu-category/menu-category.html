@@ -1,22 +1,12 @@
-<ion-header id="home-header">
-  <header></header>
-</ion-header>
-
-<ion-content padding>
-  <ion-grid>
-    <ion-row>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuList()">Cat A</button>
+<ion-grid>
+  <ion-row>
+      <ion-col col-3 *ngFor ="let category of categories">
+          <button *ngIf="currentLang == 'EN'" ion-button block (click)="openMenuList()">
+            aaa
+          </button>
+          <button *ngIf="currentLang == 'JP'" ion-button block (click)="openMenuList()">
+              bbb
+          </button>
       </ion-col>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuList()">Cat B</button>
-      </ion-col>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuList()">Cat C</button>
-      </ion-col>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuList()">Cat D</button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</ion-content>
+  </ion-row>
+</ion-grid>
