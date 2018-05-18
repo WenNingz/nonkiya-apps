@@ -12,6 +12,7 @@ export interface PageInterface {
   title: string;
   component: any;
   icon: string;
+  image: string;
 }
 
 @Component({
@@ -21,16 +22,17 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage:any = HomePage;
+  activePage: any;
   
   appPages: PageInterface[] = [
-    { title: 'Recommend', component: RecommendListPage, icon: '' },
-    { title: 'Menu',  component: MenuCategoryPage, icon: '' },
+    { title: 'Recommend', component: RecommendListPage, icon: '' , image: 'link.jpg'},
+    { title: 'Menu', component: MenuCategoryPage, icon: '' , image: 'link.jpg'},
   ];
 
   menuPages: PageInterface[] = [
-    { title: 'Menu Category',component: MenuListPage, icon: 'person' },
-    { title: 'Menu Category',component: MenuListPage, icon: 'help' },
-    { title: 'Menu Category', component: MenuListPage, icon: 'log-out' }
+    { title: 'Menu Category', component: MenuListPage, icon: '', image: '../assets/imgs/cat01.png' },
+    { title: 'Menu Category', component: MenuListPage, icon: '', image: '../assets/imgs/cat02.png'},
+    { title: 'Menu Category', component: MenuListPage, icon: '', image: '../assets/imgs/cat03.png'}
   ];
 
   constructor(
@@ -40,6 +42,7 @@ export class MyApp {
     public splashScreen: SplashScreen
    ) {
     this.initializeApp();
+    this.activePage = this.activePage;
   }
 
     initializeApp() {
@@ -56,6 +59,11 @@ export class MyApp {
     this.menu.close();
     // navigate to the new page if it is not the current page
     this.nav.setRoot(page.component);
+    this.activePage = page;
+  }
+
+  checkActive(page){
+    return page == this.activePage;
   }
 }
 
