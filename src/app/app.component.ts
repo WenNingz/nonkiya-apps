@@ -25,6 +25,7 @@ export class MyApp {
   activePage: any;
   
   appPages: PageInterface[] = [
+    { title: 'Home', component: HomePage, icon: '' , image: 'link.jpg'},
     { title: 'Recommend', component: RecommendListPage, icon: '' , image: 'link.jpg'},
     { title: 'Menu', component: MenuCategoryPage, icon: '' , image: 'link.jpg'},
   ];
