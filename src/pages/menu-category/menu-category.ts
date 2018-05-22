@@ -18,8 +18,10 @@ export class MenuCategoryPage {
   localization: any = localizationData;
   subs: Subscription[] = [];
   currentLang: string = "";
+  cardHeight: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
+    console.log(this.localization);
     console.log(this.categories);
     this.subs.push(
       this._service.currentLang$.subscribe(
@@ -39,4 +41,5 @@ export class MenuCategoryPage {
   openMenuList() { 
     this.navCtrl.setRoot(MenuListPage);
   }
+
 }

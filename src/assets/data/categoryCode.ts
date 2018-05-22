@@ -1,11 +1,11 @@
 export default 
   [
-    'ColdRamen',
-    'HotRamen',
-    'Food',
-    'Summer',
-    'Kakigori',
-    'Drink',
-    'AlaCarte',
-    'Takeout',
+    'C0001',
+    'C0002',
+    'C0003',
+    'C0004',
+    'C0005',
+    'C0006',
+    'C0007',
+    'C0008',
   ]
