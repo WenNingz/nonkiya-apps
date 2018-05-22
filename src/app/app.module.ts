@@ -13,6 +13,9 @@ import { MenuDetailsPage } from '../pages/menu-details/menu-details';
 import { RecommendListPage } from '../pages/recommend-list/recommend-list';
 import { RecommendGridPage } from '../pages/recommend-grid/recommend-grid';
 
+import { HeaderComponent } from '../components/header/header';
+import { ServiceProvider } from '../providers/service/service';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -23,6 +26,7 @@ import { RecommendGridPage } from '../pages/recommend-grid/recommend-grid';
     MenuDetailsPage, 
     RecommendListPage, 
     RecommendGridPage, 
+    HeaderComponent, 
   ],
   imports: [
     BrowserModule,
@@ -37,12 +41,13 @@ import { RecommendGridPage } from '../pages/recommend-grid/recommend-grid';
     MenuGridPage, 
     MenuDetailsPage, 
     RecommendListPage, 
-    RecommendGridPage, 
+    RecommendGridPage,  
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ServiceProvider
   ]
 })
 export class AppModule {}
