@@ -10,10 +10,25 @@ import { MenuGridPage } from '../menu-grid/menu-grid';
 })
 export class MenuCategoryPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  categories: string[] = data;
+  localization: any = localizationData;
+  subs: Subscription[] = [];
+  currentLang: string = "";
+  cardHeight: number;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
+    console.log(this.localization);
+    this.subs.push(
+      this._service.currentLang$.subscribe(
+        res => {
+          this.currentLang = res;
+        }
+      )
+    )
   }
 
   openMenuList() { 
     this.navCtrl.setRoot(MenuListPage);
   }
+
 }

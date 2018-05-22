@@ -1,3 +1,29 @@
 page-menu-category {
+  .card-background-page {
+    .card-box {
+      position: relative;
+    }
 
+    .card-content {
+      position: absolute;
+      width: 80%;
+      height: 80%;
+      top: calc(100% - 82%);
+      right: calc(100% - 98%);
+      text-align: center;
+    }
+
+    .card-circle {
+      position: relative;
+      background: #f00;
+      width: calc(100% - 20%);
+      height: calc(100% - 20%);
+      border-radius: 50%;
+      
+    }
+
+    .card-title {
+    }
+  }
 }
+

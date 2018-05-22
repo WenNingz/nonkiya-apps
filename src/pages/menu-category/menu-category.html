@@ -1,27 +1,28 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Nonkiya</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
+<ion-scroll scrollY="true" style="width: 100%; height: 100%">
   <ion-grid>
     <ion-row>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuList()">Cat A</button>
-      </ion-col>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuList()">Cat B</button>
-      </ion-col>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuList()">Cat C</button>
-      </ion-col>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuList()">Cat D</button>
+      <ion-col col-12 col-sm-6 col-md-3 col-lg-3 *ngFor ="let category of categories">
+        <div class="card-background-page">
+          <ion-card class="card-box" *ngIf="currentLang == 'EN'" (click)="openMenuList()">
+            <img class="card-img" src="../../assets/imgs/category/coldRamenSqr.png"/>
+            <div class="card-content">
+              <div class="card-circle">
+                <div class="card-title">{{ localization[category].EN }}</div>
+                <div class="card-subtitle"></div>
+              </div>
+            </div>
+            
+          </ion-card>
+        </div>
+        <div class="card-background-page">
+          <ion-card *ngIf="currentLang == 'JP'" ion-button block (click)="openMenuList()">
+            <img class="card-img" src="../../assets/imgs/category/coldRamen.png"/>
+            <div class="card-title">{{ localization[category].JP }}</div>
+            <div class="card-subtitle"></div>
+          </ion-card>
+        </div>
       </ion-col>
     </ion-row>
   </ion-grid>
-</ion-content>
+</ion-scroll>
+  
