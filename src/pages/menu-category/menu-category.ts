@@ -38,8 +38,8 @@ export class MenuCategoryPage {
     })
   }
   
-  openMenuList() { 
-    this.navCtrl.setRoot(MenuListPage);
+  openMenuList(val) {
+    this.navCtrl.push(MenuListPage, {category: val});
   }
 
 }

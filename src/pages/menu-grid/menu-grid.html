@@ -1,26 +1,61 @@
-<ion-content padding>
+<ion-scroll scrollY="true" style="width: 100%; height: 85%">
   <ion-grid>
-    <ion-row>
-        <ion-col col-1 push-11>
-            <ion-icon (click)="openMenuList()" name="ios-list-box-outline"></ion-icon>
-        </ion-col>
-        <ion-col col-1 push-9>
-          <ion-icon name="ios-grid-outline"></ion-icon>
+    <ion-row id="view-btn" align-items-end justify-content-end>
+        <ion-col col-12 align-self-end >
+          <button (click)="openMenuList()" ion-button icon-only clear float-right class="no-margin no-rad btn-inactive">
+            <ion-icon name="list" class="icon-white"></ion-icon>
+          </button>
+          <button ion-button icon-only clear float-right class="no-margin no-rad"  [disabled]="true">
+            <ion-icon name="apps" class="icon-white"></ion-icon>
+          </button>
         </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuDetails()">Menu A</button>
+  
+    <ion-row id="view-content" justify-content-center class="view-content">
+      <ion-col col-12 col-sm-6 col-md-4 col-lg-4>
+        <ion-card (click)="openMenuDetails()">
+          <img src="../../assets/imgs/category/coldRamenSqr.png"/>
+          <ion-card-content>
+            <ion-card-title class="card-title">
+              Sugoi Ramen A
+            </ion-card-title>
+            <p class="card-subs">Price <span>Y650</span></p>
+          </ion-card-content>
+        </ion-card>
       </ion-col>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuDetails()">Menu B</button>
-      </ion-col>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuDetails()">Menu C</button>
-      </ion-col>
-      <ion-col col-3>
-        <button ion-button block (click)="openMenuDetails()">Menu D</button>
-      </ion-col>
-    </ion-row>
+      <ion-col col-12 col-sm-6 col-md-4 col-lg-4>
+          <ion-card (click)="openMenuDetails()">
+            <img src="../../assets/imgs/category/coldRamenSqr.png"/>
+            <ion-card-content>
+              <ion-card-title class="card-title">
+                Sugoi Ramen A
+              </ion-card-title>
+              <p class="card-subs">Price <span>Y650</span></p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col col-12 col-sm-6 col-md-4 col-lg-4>
+            <ion-card (click)="openMenuDetails()">
+              <img src="../../assets/imgs/category/coldRamenSqr.png"/>
+              <ion-card-content>
+                <ion-card-title class="card-title">
+                  Sugoi Ramen A
+                </ion-card-title>
+                <p class="card-subs">Price <span>Y650</span></p>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col col-12 col-sm-6 col-md-4 col-lg-4>
+              <ion-card (click)="openMenuDetails()">
+                <img src="../../assets/imgs/category/coldRamenSqr.png"/>
+                <ion-card-content>
+                  <ion-card-title class="card-title">
+                    Sugoi Ramen A
+                  </ion-card-title>
+                  <p class="card-subs">Price <span>Y650</span></p>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+      </ion-row>
   </ion-grid>
-</ion-content>
+</ion-scroll>

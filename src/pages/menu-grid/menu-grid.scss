@@ -1,3 +1,46 @@
 page-menu-grid {
+  #view-btn {
+    .no-margin {
+      margin: 0;
+    }
 
+    button[disabled] {
+      background-color: mediumaquamarine;
+      opacity: 1;
+    }
+
+    .btn-inactive {
+      background-color: lightgray;
+    }
+
+    .icon-white {
+      color: white;
+    }
+
+    .no-rad {
+      border-radius: 0;
+    }
+  }
+
+  #view-content {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    .card-content {
+      padding: 0;
+    }
+
+    .card-title {
+      text-align: center;
+    }
+
+    .card-subs {
+      text-align: center;
+      font-size: 2rem;
+
+      span {
+        color: #E27D4F;
+      }
+    }
+  }
 }

@@ -3,7 +3,61 @@ export default {
     EN: {
       name: 'Cold Ramen',
       color: 'violet',
-      img: '../../assets/imgs/category/coldRamenSqr.png'
+      img: '../../assets/imgs/category/coldRamenSqr.png',
+      menu: {
+        M0001: {
+          id: '',
+          name: '手打ざる中華そば', 
+          price: '600',
+          description: '', 
+          img: '', 
+          ingredients: [
+            'Something1',
+            'Something2',
+            'Something3',
+            'Something4', 
+          ]
+        },
+        M0002: {
+          id: '',
+          name: '手打山菜とろろぶっかけそば', 
+          price: '950',
+          description: '', 
+          img: '', 
+          ingredients: [
+            'Something1',
+            'Something2',
+            'Something3',
+            'Something4', 
+          ]
+        }, 
+        M0003: {
+          id: '',
+          name: '手打山菜とろろぶっかけそば', 
+          price: '950',
+          description: '', 
+          img: '', 
+          ingredients: [
+            'Something1',
+            'Something2',
+            'Something3',
+            'Something4', 
+          ]
+        }, 
+        M0004: {
+          id: '',
+          name: '手打山菜とろろぶっかけそば', 
+          price: '950',
+          description: '', 
+          img: '', 
+          ingredients: [
+            'Something1',
+            'Something2',
+            'Something3',
+            'Something4', 
+          ]
+        }
+      }
     },  
     JP: {
       name: '冷たい麺',
@@ -55,7 +109,23 @@ export default {
     EN: {
       name: 'Ice Shaved',
       color: 'blue',
-      img: '../../assets/imgs/category/coldRamenSqr.png'
+      img: '../../assets/imgs/category/coldRamenSqr.png',
+      menu: [
+        {
+          id: '',
+          name: '', 
+          price: '',
+          description: '', 
+          img: '', 
+          ingredients: [
+            'Something1',
+            'Something2',
+            'Something3',
+            'Something4', 
+          ]
+        }
+      ]
+      
     },  
     JP: {
       name: 'かき氷（夏季限定）',
