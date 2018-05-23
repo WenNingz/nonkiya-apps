@@ -1,29 +1,23 @@
-<ion-content padding>
-  <ion-grid>
-      <ion-row>
-          <ion-col col-1 push-11>
-              <ion-icon name="ios-list-box-outline"></ion-icon>
-          </ion-col>
-          <ion-col col-1 push-9>
-            <ion-icon (click)="openMenuGrid()" name="ios-grid-outline"></ion-icon>
+<ion-scroll scrollY="true" style="width: 100%; height: 100%">
+  <ion-grid  class="fullcenter">
+        <ion-row id="view-btn" align-items-end justify-content-end>
+          <ion-col col-12 align-self-end >
+            <button (click)="openMenuList()" ion-button icon-only clear float-right class="no-margin no-rad btn-inactive">
+              <ion-icon name="list" class="icon-white"></ion-icon>
+            </button>
+            <button ion-button icon-only clear float-right class="no-margin no-rad"  [disabled]="true">
+              <ion-icon name="apps" class="icon-white"></ion-icon>
+            </button>
           </ion-col>
       </ion-row>
+      
+    <ion-list class="has-subheader makecenter"> 
+        <button ion-item *ngFor="let item of artists" class="item-thumbnail-left item-text-wrap">
+          <img src="assets/imgs/{{item.imgname}}_tn.jpg" alt="Photo">
+          <h2>{{item.name}}</h2> 
+          <h3>{{item.desc}}</h3>
+          <p>Price: <span>{{item.price}}</span>
+        </button>
+    </ion-list>
   </ion-grid>
-    <ion-grid>
-      <ion-row>
-        <ion-col col-12>
-          <ion-list>
-            <button ion-item (click)="openMenuDetails()">
-              A
-            </button>  
-            <button ion-item (click)="openMenuDetails()">
-              B
-            </button>  
-            <button ion-item (click)="openMenuDetails()">
-              C
-            </button>  
-          </ion-list>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-</ion-content>
+</ion-scroll>
