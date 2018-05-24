@@ -2,6 +2,7 @@ export default {
   C0001: {
     EN: {
       name: 'Cold Ramen',
+      icon: '../../assets/imgs/cat01.png', 
       color: 'violet',
       img: '../../assets/imgs/category/coldRamenSqr.png',
       menus: [
@@ -23,6 +24,7 @@ export default {
     },  
     JP: {
       name: '冷たい麺',
+      icon: '../../assets/imgs/cat01.png', 
       color: 'violet',
       img: '../../assets/imgs/category/coldRamenSqr.png', 
       menus: [
@@ -47,11 +49,13 @@ export default {
   C0002: {
     EN: {
       name: 'Hot Ramen',
+      icon: '../../assets/imgs/cat02.png', 
       color: 'red',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     },  
     JP: {
       name: '温かい麺',
+      icon: '../../assets/imgs/cat02.png', 
       color: 'red',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     }
@@ -60,11 +64,13 @@ export default {
   C0003: {
     EN: {
       name: 'Food',
+      icon: '../assets/imgs/cat02.png', 
       color: 'green',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     },  
     JP: {
       name: 'ご飯物',
+      icon: '../../assets/imgs/cat02.png', 
       color: 'green',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     }
@@ -73,11 +79,13 @@ export default {
   C0004: {
     EN: {
       name: 'Summer Only',
+      icon: '../../assets/imgs/cat03.png', 
       color: 'orange',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     },  
     JP: {
       name: '夏季限定',
+      icon: '../../assets/imgs/cat03.png', 
       color: 'orange',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     }
@@ -86,27 +94,13 @@ export default {
   C0005: {
     EN: {
       name: 'Ice Shaved',
+      icon: '../../assets/imgs/cat03.png', 
       color: 'blue',
       img: '../../assets/imgs/category/coldRamenSqr.png',
-      menu: [
-        {
-          id: '',
-          name: '', 
-          price: '',
-          description: '', 
-          img: '', 
-          ingredients: [
-            'Something1',
-            'Something2',
-            'Something3',
-            'Something4', 
-          ]
-        }
-      ]
-      
     },  
     JP: {
       name: 'かき氷（夏季限定）',
+      icon: '../../assets/imgs/cat03.png', 
       color: 'blue',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     }
@@ -115,11 +109,13 @@ export default {
   C0006: {
     EN: {
       name: 'Drink',
+      icon: '../../assets/imgs/cat03.png', 
       color: 'yellow',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     },  
     JP: {
       name: 'お飲み物',
+      icon: '../../assets/imgs/cat03.png', 
       color: 'yellow',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     }
@@ -128,11 +124,13 @@ export default {
   C0007: {
     EN: {
       name: 'A La Carte',
+      icon: '../../assets/imgs/cat01.png', 
       color: 'amber',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     },  
     JP: {
       name: '一品料理',
+      icon: '../../assets/imgs/cat01.png', 
       color: 'amber',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     }
@@ -141,11 +139,13 @@ export default {
   C0008: {
     EN: {
       name: 'Take Away',
+      icon: '../../assets/imgs/cat01.png', 
       color: 'brown',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     },  
     JP: {
       name: 'お持ち帰り（生そば）',
+      icon: '../../assets/imgs/cat01.png', 
       color: 'brown',
       img: '../../assets/imgs/category/coldRamenSqr.png'
     }

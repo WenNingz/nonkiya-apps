@@ -18,7 +18,6 @@ export class MenuCategoryPage {
   localization: any = localizationData;
   subs: Subscription[] = [];
   currentLang: string = "";
-  cardHeight: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
     console.log(this.currentLang);
