@@ -12,19 +12,33 @@ import { ServiceProvider }from '../../providers/service/service';
   templateUrl: 'menu-grid.html',
 })
 export class MenuGridPage {
-  category: string
+  category: string;
   localization: any = localizationData;
   subs: Subscription[] = [];
   currentLang: string = "";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
     this.category = navParams.get('category');
-    console.log('HEHREE');
-    console.log(this.category);
+    console.log(this.currentLang);
+    this.subs.push(
+      this._service.currentLang$.subscribe(
+        res => {
+          this.currentLang = res;
+        }
+      )
+    )
   }
 
-  openMenuList() { 
-    this.navCtrl.setRoot(MenuListPage);
+  ionViewWillLeave(){
+    this.subs.forEach(sub => {
+      sub.unsubscribe();
+    })
+  }
+
+  openMenuList(cat) { 
+    this.navCtrl.push(MenuListPage, {
+      category: cat
+    });
   }
   openMenuDetails() { 
     this.navCtrl.setRoot(MenuDetailsPage);

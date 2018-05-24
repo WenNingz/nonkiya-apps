@@ -2,7 +2,7 @@
   <ion-grid>
     <ion-row id="view-btn" align-items-end justify-content-end>
         <ion-col col-12 align-self-end >
-          <button (click)="openMenuList()" ion-button icon-only clear float-right class="no-margin no-rad btn-inactive">
+          <button (click)="openMenuList(category)" ion-button icon-only clear float-right class="no-margin no-rad btn-inactive">
             <ion-icon name="list" class="icon-white"></ion-icon>
           </button>
           <button ion-button icon-only clear float-right class="no-margin no-rad"  [disabled]="true">
@@ -11,51 +11,31 @@
         </ion-col>
     </ion-row>
   
-    <ion-row id="view-content" justify-content-center class="view-content">
-      <ion-col col-12 col-sm-6 col-md-4 col-lg-4>
+    <ion-row *ngIf="currentLang == 'EN'" id="view-content" justify-content-center class="view-content">
+      <ion-col *ngFor ="let menu of localization[category].EN.menus" col-12 col-sm-6 col-md-4 col-lg-4>
         <ion-card (click)="openMenuDetails()">
-          <img src="../../assets/imgs/category/coldRamenSqr.png"/>
+          <img src="../../assets/imgs/sugoiramen_tn.jpg"/>
           <ion-card-content>
             <ion-card-title class="card-title">
-              Sugoi Ramen A
+              {{ menu.name }}
             </ion-card-title>
-            <p class="card-subs">Price <span>Y650</span></p>
+            <p class="card-subs">Price <span>{{ menu.price }}</span></p>
           </ion-card-content>
         </ion-card>
-      </ion-col>
-      <ion-col col-12 col-sm-6 col-md-4 col-lg-4>
+      </ion-col>  
+    </ion-row>
+    <ion-row *ngIf="currentLang == 'JP'" id="view-content" justify-content-center class="view-content">
+        <ion-col *ngFor ="let menu of localization[category].JP.menus" col-12 col-sm-6 col-md-4 col-lg-4>
           <ion-card (click)="openMenuDetails()">
-            <img src="../../assets/imgs/category/coldRamenSqr.png"/>
+            <img src="../../assets/imgs/sugoiramen_tn.jpg"/>
             <ion-card-content>
               <ion-card-title class="card-title">
-                Sugoi Ramen A
+                {{ menu.name }}
               </ion-card-title>
-              <p class="card-subs">Price <span>Y650</span></p>
+              <p class="card-subs">Price <span>{{ menu.price }}</span></p>
             </ion-card-content>
           </ion-card>
-        </ion-col>
-        <ion-col col-12 col-sm-6 col-md-4 col-lg-4>
-            <ion-card (click)="openMenuDetails()">
-              <img src="../../assets/imgs/category/coldRamenSqr.png"/>
-              <ion-card-content>
-                <ion-card-title class="card-title">
-                  Sugoi Ramen A
-                </ion-card-title>
-                <p class="card-subs">Price <span>Y650</span></p>
-              </ion-card-content>
-            </ion-card>
-          </ion-col>
-          <ion-col col-12 col-sm-6 col-md-4 col-lg-4>
-              <ion-card (click)="openMenuDetails()">
-                <img src="../../assets/imgs/category/coldRamenSqr.png"/>
-                <ion-card-content>
-                  <ion-card-title class="card-title">
-                    Sugoi Ramen A
-                  </ion-card-title>
-                  <p class="card-subs">Price <span>Y650</span></p>
-                </ion-card-content>
-              </ion-card>
-            </ion-col>
+        </ion-col>  
       </ion-row>
   </ion-grid>
 </ion-scroll>

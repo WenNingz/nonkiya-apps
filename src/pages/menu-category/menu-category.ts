@@ -21,8 +21,7 @@ export class MenuCategoryPage {
   cardHeight: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
-    console.log(this.localization);
-    console.log(this.categories);
+    console.log(this.currentLang);
     this.subs.push(
       this._service.currentLang$.subscribe(
         res => {
@@ -38,8 +37,10 @@ export class MenuCategoryPage {
     })
   }
   
-  openMenuList(val) {
-    this.navCtrl.push(MenuListPage, {category: val});
+  openMenuList(cat) {
+    this.navCtrl.push(MenuListPage, {
+      category: cat
+    });
   }
 
 }

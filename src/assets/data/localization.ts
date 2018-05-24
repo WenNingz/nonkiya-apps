@@ -4,65 +4,43 @@ export default {
       name: 'Cold Ramen',
       color: 'violet',
       img: '../../assets/imgs/category/coldRamenSqr.png',
-      menu: {
-        M0001: {
-          id: '',
-          name: '手打ざる中華そば', 
+      menus: [
+        {
+          id: 'M0001',
+          name: 'HandMake Soba', 
           price: '600',
           description: '', 
-          img: '', 
+          imgs: [], 
           ingredients: [
-            'Something1',
-            'Something2',
-            'Something3',
-            'Something4', 
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
           ]
         },
-        M0002: {
-          id: '',
-          name: '手打山菜とろろぶっかけそば', 
-          price: '950',
-          description: '', 
-          img: '', 
-          ingredients: [
-            'Something1',
-            'Something2',
-            'Something3',
-            'Something4', 
-          ]
-        }, 
-        M0003: {
-          id: '',
-          name: '手打山菜とろろぶっかけそば', 
-          price: '950',
-          description: '', 
-          img: '', 
-          ingredients: [
-            'Something1',
-            'Something2',
-            'Something3',
-            'Something4', 
-          ]
-        }, 
-        M0004: {
-          id: '',
-          name: '手打山菜とろろぶっかけそば', 
-          price: '950',
-          description: '', 
-          img: '', 
-          ingredients: [
-            'Something1',
-            'Something2',
-            'Something3',
-            'Something4', 
-          ]
-        }
-      }
+      ]
     },  
     JP: {
       name: '冷たい麺',
       color: 'violet',
-      img: '../../assets/imgs/category/coldRamenSqr.png'
+      img: '../../assets/imgs/category/coldRamenSqr.png', 
+      menus: [
+        {
+          id: 'M0001',
+          name: '手打ざる中華そば', 
+          price: '600',
+          description: '', 
+          imgs: [], 
+          ingredients: [
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
+          ]
+        },
+      ]
     }
   }, 
 
