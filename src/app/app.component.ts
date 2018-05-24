@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { MenuCategoryPage } from '../pages/menu-category/menu-category';
-import { MenuListPage } from '../pages/menu-list/menu-list';
+import { MenuLayoutPage } from '../pages/menu-layout/menu-layout'; 
 import { RecommendListPage } from '../pages/recommend-list/recommend-list';
 
 export interface PageInterface {
@@ -31,9 +31,9 @@ export class MyApp {
   ];
 
   menuPages: PageInterface[] = [
-    { title: 'Menu Category', component: MenuListPage, icon: '', image: '../assets/imgs/cat01.png' },
-    { title: 'Menu Category', component: MenuListPage, icon: '', image: '../assets/imgs/cat02.png'},
-    { title: 'Menu Category', component: MenuListPage, icon: '', image: '../assets/imgs/cat03.png'}
+    { title: 'Menu Category', component: MenuLayoutPage, icon: '', image: '../assets/imgs/cat01.png' },
+    { title: 'Menu Category', component: MenuLayoutPage, icon: '', image: '../assets/imgs/cat02.png'},
+    { title: 'Menu Category', component: MenuLayoutPage, icon: '', image: '../assets/imgs/cat03.png'}
   ];
 
   constructor(

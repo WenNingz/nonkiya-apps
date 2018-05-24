@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { MenuListPage } from '../menu-list/menu-list';
+import { MenuLayoutPage } from '../menu-layout/menu-layout';
 
 import data from '../../assets/data/categoryCode';
 import localizationData from '../../assets/data/localization';
@@ -38,7 +38,7 @@ export class MenuCategoryPage {
   }
   
   openMenuList(cat) {
-    this.navCtrl.push(MenuListPage, {
+    this.navCtrl.push(MenuLayoutPage, {
       category: cat
     });
   }

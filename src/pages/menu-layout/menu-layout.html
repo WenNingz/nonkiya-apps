@@ -1,0 +1,66 @@
+<ion-scroll scrollY="true" style="width: 100%; height: 85%">
+  <ion-grid>
+    <ion-row id="view-btn" align-items-end justify-content-end>
+      <ion-col col-12 align-self-end>
+        <div class="w-10">
+          <ion-segment [(ngModel)]="viewStyle">
+            <ion-segment-button value="list-style">
+                <ion-icon name="list" class=""></ion-icon>
+            </ion-segment-button>
+            <ion-segment-button value="grid-style">
+              <ion-icon name="apps" class=""></ion-icon>
+            </ion-segment-button>
+          </ion-segment>
+        </div>
+      </ion-col>
+    </ion-row>
+  
+    <div [ngSwitch]="viewStyle">
+      <div id="list-style" *ngSwitchCase="'list-style'">
+        <ion-list *ngIf="currentLang == 'EN'" class="has-subheader makecenter"> 
+          <button ion-item *ngFor ="let menu of localization[category].EN.menus" class="item-thumbnail-left item-text-wrap">
+            <img src="../../assets/imgs/category/coldRamenSqr.png" alt="Photo">
+            <h2>{{menu.name}}</h2> 
+            <h3>{{menu.desc}}</h3>
+            <p>Price: <span>{{menu.price}}</span>
+          </button>
+        </ion-list>
+          
+        <ion-list *ngIf="currentLang == 'JP'" class="has-subheader makecenter"> 
+          <button *ngFor ="let menu of localization[category].JP.menus" ion-item class="item-thumbnail-left item-text-wrap">
+            <img src="../../assets/imgs/category/coldRamenSqr.png" alt="Photo">
+            <h2>{{menu.name}}</h2> 
+            <h3>{{menu.description}}</h3>
+            <p>Price: <span>{{menu.price}}</span>
+          </button>
+        </ion-list>
+      </div>
+
+      <div id="grid-content" *ngSwitchCase="'grid-style'">
+        <ion-row *ngIf="currentLang == 'EN'" id="view-content" justify-content-center class="view-content">
+          <ion-col *ngFor ="let menu of localization[category].EN.menus" col-1 col-sm-6 col-md-4 col-lg-4>
+            <ion-card (click)="openMenuDetails()">
+              <img src="../../assets/imgs/sugoiramen_tn.jpg"/>
+              <ion-card-content>
+                <ion-card-title class="card-title">{{ menu.name }}</ion-card-title>
+                <p class="card-subs">Price <span>{{ menu.price }}</span></p>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>  
+        </ion-row>
+        <ion-row  *ngIf="currentLang == 'JP'" id="view-content" justify-content-center class="view-content">
+          <ion-col *ngFor ="let menu of localization[category].JP.menus" col-12 col-sm-6 col-md-4 col-lg-4>
+            <ion-card (click)="openMenuDetails()">
+              <img src="../../assets/imgs/sugoiramen_tn.jpg"/>
+              <ion-card-content>
+                <ion-card-title class="card-title">{{ menu.name }}</ion-card-title>
+                  <p class="card-subs">Price <span>{{ menu.price }}</span></p>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>  
+        </ion-row>
+      </div>
+    </div>  
+  </ion-grid>
+</ion-scroll>
+  
