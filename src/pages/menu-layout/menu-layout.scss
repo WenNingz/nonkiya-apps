@@ -5,10 +5,15 @@ page-menu-layout {
       float:right;
     }
 
-    .btn-bg {
+    .btn-view {
       border-bottom-width: 0;
       border-bottom-style: none;
       padding: 0 10px;
+      background-color: #BFBFBF;
+    }
+
+    .segment-activated {
+      background-color: #2AC090;
     }
 
     .icon-white {
