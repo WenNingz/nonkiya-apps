@@ -5,45 +5,58 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { MenuCategoryPage } from '../pages/menu-category/menu-category';
-import { MenuListPage } from '../pages/menu-list/menu-list';
+import { MenuLayoutPage } from '../pages/menu-layout/menu-layout'; 
 import { RecommendListPage } from '../pages/recommend-list/recommend-list';
 
+import data from '../assets/data/categoryCode';
+import localizationData from '../assets/data/localization';
+import { Subscription } from 'rxjs/Subscription';
+import { ServiceProvider }from '../providers/service/service';
+
 export interface PageInterface {
-  title: string;
+  enTitle: string;
+  jpTitle: string;
   component: any;
-  icon: string;
-  image: string;
 }
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
+  categories: string[] = data;
+  localization: any = localizationData;
+  subs: Subscription[] = [];
+  currentLang: string = "";
+
+
   @ViewChild(Nav) nav: Nav;
 
   rootPage:any = HomePage;
   activePage: any;
   
   appPages: PageInterface[] = [
-    { title: 'Home', component: HomePage, icon: '' , image: 'link.jpg'},
-    { title: 'Recommend', component: RecommendListPage, icon: '' , image: 'link.jpg'},
-    { title: 'Menu', component: MenuCategoryPage, icon: '' , image: 'link.jpg'},
-  ];
-
-  menuPages: PageInterface[] = [
-    { title: 'Menu Category', component: MenuListPage, icon: '', image: '../assets/imgs/cat01.png' },
-    { title: 'Menu Category', component: MenuListPage, icon: '', image: '../assets/imgs/cat02.png'},
-    { title: 'Menu Category', component: MenuListPage, icon: '', image: '../assets/imgs/cat03.png'}
+    { enTitle: 'Home', jpTitle: 'ホーム', component: HomePage },
+    { enTitle: 'Recommend', jpTitle: 'おすすめ', component: RecommendListPage },
+    { enTitle: 'Menu', jpTitle: 'メニュー', component: MenuCategoryPage },
   ];
 
   constructor(
     public platform: Platform,
     public menu: MenuController,
     public statusBar: StatusBar,
-    public splashScreen: SplashScreen
+    public splashScreen: SplashScreen, 
+    private _service : ServiceProvider
    ) {
     this.initializeApp();
     this.activePage = this.activePage;
+
+    this.subs.push(
+      this._service.currentLang$.subscribe(
+        res => {
+          this.currentLang = res;
+        }
+      )
+    )
   }
 
     initializeApp() {
@@ -63,8 +76,20 @@ export class MyApp {
     this.activePage = page;
   }
 
+  openMenuList(cat) {
+    this.nav.push(MenuLayoutPage, {
+      category: cat
+    });
+  }
+
   checkActive(page){
     return page == this.activePage;
+  }
+
+  ionViewWillLeave(){
+    this.subs.forEach(sub => {
+      sub.unsubscribe();
+    })
   }
 }
 

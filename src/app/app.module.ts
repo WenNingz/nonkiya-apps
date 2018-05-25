@@ -7,8 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MenuCategoryPage } from '../pages/menu-category/menu-category';
-import { MenuListPage } from '../pages/menu-list/menu-list';
-import { MenuGridPage } from '../pages/menu-grid/menu-grid';
+import { MenuLayoutPage } from '../pages/menu-layout/menu-layout';
 import { MenuDetailsPage } from '../pages/menu-details/menu-details';
 import { RecommendListPage } from '../pages/recommend-list/recommend-list';
 import { RecommendGridPage } from '../pages/recommend-grid/recommend-grid';
@@ -20,9 +19,8 @@ import { ServiceProvider } from '../providers/service/service';
   declarations: [
     MyApp,
     HomePage,
-    MenuCategoryPage, 
-    MenuListPage, 
-    MenuGridPage, 
+    MenuCategoryPage,
+    MenuLayoutPage, 
     MenuDetailsPage, 
     RecommendListPage, 
     RecommendGridPage, 
@@ -37,8 +35,7 @@ import { ServiceProvider } from '../providers/service/service';
     MyApp,
     HomePage,
     MenuCategoryPage, 
-    MenuListPage, 
-    MenuGridPage, 
+    MenuLayoutPage, 
     MenuDetailsPage, 
     RecommendListPage, 
     RecommendGridPage,  

@@ -1,23 +1,21 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { MenuLayoutPage } from '../menu-layout/menu-layout';
-
-import data from '../../assets/data/categoryCode';
+import { MenuDetailsPage } from '../menu-details/menu-details';
 import localizationData from '../../assets/data/localization';
 import { Subscription } from 'rxjs/Subscription';
 import { ServiceProvider }from '../../providers/service/service';
 
 @Component({
-  selector: 'page-menu-category',
-  templateUrl: 'menu-category.html',
+  selector: 'page-menu-layout',
+  templateUrl: 'menu-layout.html',
 })
-export class MenuCategoryPage {
-
-  categories: string[] = data;
+export class MenuLayoutPage {
+  category: string;
   localization: any = localizationData;
   subs: Subscription[] = [];
   currentLang: string = "";
+  viewStyle: string = "list-style";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
     this.subs.push(
@@ -27,7 +25,8 @@ export class MenuCategoryPage {
         }
       )
     )
-    console.log('CATEGORY LANG:' + this.currentLang);
+    console.log('LAYOUT LANG:' + this.currentLang);
+    this.category = navParams.get('category');
   }
 
   ionViewWillLeave(){
@@ -35,11 +34,9 @@ export class MenuCategoryPage {
       sub.unsubscribe();
     })
   }
-  
-  openMenuList(cat) {
-    this.navCtrl.push(MenuLayoutPage, {
-      category: cat
-    });
+
+  openMenuDetails() { 
+    this.navCtrl.setRoot(MenuDetailsPage);
   }
 
 }

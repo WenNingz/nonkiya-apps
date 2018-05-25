@@ -1,19 +1,31 @@
 <ion-menu persistent='true' [content]="content">
-
-
   <ion-content>
-      <ion-card>
-        <img src="./assets/imgs/sidebar.jpg"/>
-      </ion-card>
-      <ion-list>
-      <button class="sidebarBGColor sidebarFontColor"ion-item menuClose detail-none *ngFor="let p of appPages" [class.activeHighLight]="checkActive(p)" (click)="openPage(p)">
-        <!-- <ion-icon item-start [name]="p.icon"></ion-icon> -->
-        {{p.title}}
+    <ion-card>
+      <img src="./assets/imgs/sidebar.jpg"/>
+    </ion-card>
+    <ion-list>
+      <button class="sidebarBGColor sidebarFontColor" 
+        ion-item menuClose detail-none 
+        *ngFor="let p of appPages" 
+        [class.activeHighLight]="checkActive(p)" 
+        (click)="openPage(p)"
+      >
+        <div *ngIf="currentLang == 'EN'">{{p.enTitle}}</div>
+        <div *ngIf="currentLang == 'JP'">{{p.jpTitle}}</div>
       </button>
-      <button ion-item menuClose *ngFor="let p of menuPages" (click)="openPage(p)">
-        <!-- <ion-icon item-start [name]="p.icon"></ion-icon> -->
-        <img [src]="p.image" class="imageSize">
-        {{p.title}}
+
+      <button ion-item menuClose 
+        *ngFor="let category of categories" 
+        (click)="openMenuList(category)"
+      >
+        <div *ngIf="currentLang == 'EN'">
+          <img src="{{ localization[category].EN.icon }}" class="imageSize">
+          <span>{{ localization[category].EN.name }}</span>
+        </div>
+        <div *ngIf="currentLang == 'JP'">
+            <img src="{{ localization[category].EN.icon }}" class="imageSize">
+            <span>{{ localization[category].JP.name }}</span>
+          </div>
       </button>
     </ion-list>
   </ion-content>
