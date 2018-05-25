@@ -20,7 +20,6 @@ export class MenuCategoryPage {
   currentLang: string = "";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
-    console.log(this.currentLang);
     this.subs.push(
       this._service.currentLang$.subscribe(
         res => {
@@ -28,6 +27,7 @@ export class MenuCategoryPage {
         }
       )
     )
+    console.log('CATEGORY LANG:' + this.currentLang);
   }
 
   ionViewWillLeave(){

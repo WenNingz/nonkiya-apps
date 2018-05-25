@@ -18,8 +18,6 @@ export class MenuLayoutPage {
   viewStyle: string = "list-style";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
-    this.category = navParams.get('category');
-    console.log(this.currentLang);
     this.subs.push(
       this._service.currentLang$.subscribe(
         res => {
@@ -27,6 +25,8 @@ export class MenuLayoutPage {
         }
       )
     )
+    console.log('LAYOUT LANG:' + this.currentLang);
+    this.category = navParams.get('category');
   }
 
   ionViewWillLeave(){

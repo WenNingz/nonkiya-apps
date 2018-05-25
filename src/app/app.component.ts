@@ -85,5 +85,11 @@ export class MyApp {
   checkActive(page){
     return page == this.activePage;
   }
+
+  ionViewWillLeave(){
+    this.subs.forEach(sub => {
+      sub.unsubscribe();
+    })
+  }
 }
 

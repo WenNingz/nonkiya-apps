@@ -17,7 +17,7 @@
           </ion-card>
         </div>
         <div class="card-background-page">
-          <ion-card class="card-box" *ngIf="currentLang == 'JP'" (click)="openMenuList()">
+          <ion-card class="card-box" *ngIf="currentLang == 'JP'" (click)="openMenuList(category)">
             <img class="card-img" src="../../assets/imgs/category/coldRamenSqr.png"/>
             <div class="card-inner">
               <div class="card-circle {{ localization[category].EN.color }}">
