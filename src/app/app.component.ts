@@ -6,7 +6,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { MenuCategoryPage } from '../pages/menu-category/menu-category';
 import { MenuLayoutPage } from '../pages/menu-layout/menu-layout'; 
-import { RecommendListPage } from '../pages/recommend-list/recommend-list';
 
 import data from '../assets/data/categoryCode';
 import localizationData from '../assets/data/localization';
@@ -38,7 +37,7 @@ export class MyApp {
   appPages: PageInterface[] = [
     { enTitle: 'Home', jpTitle: 'ホーム', component: HomePage, category: '' },
     { enTitle: 'Recommend', jpTitle: 'おすすめ', component: MenuLayoutPage, category: 'Osusume' },
-    { enTitle: 'Menu', jpTitle: 'メニュー', component: '', category: '' },
+    { enTitle: 'Menu', jpTitle: 'メニュー', component: MenuCategoryPage, category: '' },
   ];
 
   constructor(
