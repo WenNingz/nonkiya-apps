@@ -16,6 +16,7 @@ export class MenuLayoutPage {
   subs: Subscription[] = [];
   currentLang: string = "";
   viewStyle: string = "list-style";
+  isRecommend: boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
     this.subs.push(
