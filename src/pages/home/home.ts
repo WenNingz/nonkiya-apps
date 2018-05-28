@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { MenuCategoryPage } from '../menu-category/menu-category';
-import { RecommendListPage } from '../recommend-list/recommend-list';
+import { MenuLayoutPage } from '../menu-layout/menu-layout';
 
 import { Subscription } from 'rxjs/Subscription';
 import { ServiceProvider }from '../../providers/service/service';
@@ -27,11 +27,13 @@ export class HomePage {
     console.log('HOME LANG:' + this.currentLang);
   }
   openMenuCategory() { 
-    this.navCtrl.setRoot(MenuCategoryPage);
+    this.navCtrl.push(MenuCategoryPage);
   }
 
   openRecommendMenu() { 
-    this.navCtrl.setRoot(RecommendListPage);
+    this.navCtrl.push(MenuLayoutPage, {
+      category: 'Osusume', 
+    });
   }
 
   ionViewWillLeave(){

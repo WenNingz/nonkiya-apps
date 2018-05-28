@@ -17,6 +17,7 @@ export interface PageInterface {
   enTitle: string;
   jpTitle: string;
   component: any;
+  category: string;
 }
 
 @Component({
@@ -35,14 +36,14 @@ export class MyApp {
   activePage: any;
   
   appPages: PageInterface[] = [
-    { enTitle: 'Home', jpTitle: 'ホーム', component: HomePage },
-    { enTitle: 'Recommend', jpTitle: 'おすすめ', component: RecommendListPage },
-    { enTitle: 'Menu', jpTitle: 'メニュー', component: MenuCategoryPage },
+    { enTitle: 'Home', jpTitle: 'ホーム', component: HomePage, category: '' },
+    { enTitle: 'Recommend', jpTitle: 'おすすめ', component: MenuLayoutPage, category: 'Osusume' },
+    { enTitle: 'Menu', jpTitle: 'メニュー', component: '', category: '' },
   ];
 
   constructor(
     public platform: Platform,
-    public menu: MenuController,
+    public menu: MenuController,  
     public statusBar: StatusBar,
     public splashScreen: SplashScreen, 
     private _service : ServiceProvider
@@ -72,7 +73,9 @@ export class MyApp {
     // close the menu when clicking a link from the menu
     this.menu.close();
     // navigate to the new page if it is not the current page
-    this.nav.setRoot(page.component);
+    this.nav.push(page.component, {
+      category: page.category
+    });
     this.activePage = page;
   }
 

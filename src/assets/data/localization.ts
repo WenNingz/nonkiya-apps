@@ -20,6 +20,62 @@ export default {
             } 
           ]
         },
+        {
+          id: 'M0002',
+          name: 'HandMade Soba', 
+          price: '600',
+          description: '', 
+          imgs: [], 
+          ingredients: [
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
+          ]
+        },
+        {
+          id: 'M0003',
+          name: 'Soba Shoyu', 
+          price: '600',
+          description: '', 
+          imgs: [], 
+          ingredients: [
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
+          ]
+        },
+        {
+          id: 'M0004',
+          name: 'Soba Ramen', 
+          price: '600',
+          description: '', 
+          imgs: [], 
+          ingredients: [
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
+          ]
+        },
+        {
+          id: 'M0005',
+          name: 'Soba Dake', 
+          price: '600',
+          description: '', 
+          imgs: [], 
+          ingredients: [
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
+          ]
+        },
       ]
     },  
     JP: {
@@ -31,6 +87,62 @@ export default {
         {
           id: 'M0001',
           name: '手打ざる中華そば', 
+          price: '600',
+          description: '', 
+          imgs: [], 
+          ingredients: [
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
+          ]
+        },
+        {
+          id: 'M0002',
+          name: '手打山菜とろろぶっかけそば', 
+          price: '600',
+          description: '', 
+          imgs: [], 
+          ingredients: [
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
+          ]
+        },
+        {
+          id: 'M0003',
+          name: '手打山菜ぶっかけそば', 
+          price: '600',
+          description: '', 
+          imgs: [], 
+          ingredients: [
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
+          ]
+        },
+        {
+          id: 'M0004',
+          name: '手打山菜とろろそば', 
+          price: '600',
+          description: '', 
+          imgs: [], 
+          ingredients: [
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
+          ]
+        },
+        {
+          id: 'M0005',
+          name: '手打ざるそば', 
           price: '600',
           description: '', 
           imgs: [], 
@@ -148,6 +260,52 @@ export default {
       icon: '../../assets/imgs/cat01.png', 
       color: 'brown',
       img: '../../assets/imgs/category/coldRamenSqr.png'
+    }
+  }, 
+  Osusume: {
+    EN: {
+      name: 'Cold Ramen',
+      icon: '../../assets/imgs/cat01.png', 
+      color: 'violet',
+      img: '../../assets/imgs/category/coldRamenSqr.png',
+      menus: [
+        {
+          id: 'M0001',
+          name: 'Handmade Soba', 
+          price: '600',
+          description: '', 
+          imgs: [], 
+          ingredients: [
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
+          ]
+        },
+      ]
+    },  
+    JP: {
+      name: '冷たい麺',
+      icon: '../../assets/imgs/cat01.png', 
+      color: 'violet',
+      img: '../../assets/imgs/category/coldRamenSqr.png', 
+      menus: [
+        {
+          id: 'M0001',
+          name: '手打ざる中華そば', 
+          price: '600',
+          description: '', 
+          imgs: [], 
+          ingredients: [
+            {
+              name: 'Something',
+              img: '', 
+              amount: ''
+            } 
+          ]
+        },
+      ]
     }
   }, 
 }
