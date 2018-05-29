@@ -9,8 +9,6 @@ import { HomePage } from '../pages/home/home';
 import { MenuCategoryPage } from '../pages/menu-category/menu-category';
 import { MenuLayoutPage } from '../pages/menu-layout/menu-layout';
 import { MenuDetailsPage } from '../pages/menu-details/menu-details';
-import { RecommendListPage } from '../pages/recommend-list/recommend-list';
-import { RecommendGridPage } from '../pages/recommend-grid/recommend-grid';
 
 import { HeaderComponent } from '../components/header/header';
 import { ServiceProvider } from '../providers/service/service';
@@ -22,8 +20,6 @@ import { ServiceProvider } from '../providers/service/service';
     MenuCategoryPage,
     MenuLayoutPage, 
     MenuDetailsPage, 
-    RecommendListPage, 
-    RecommendGridPage, 
     HeaderComponent, 
   ],
   imports: [
@@ -36,9 +32,7 @@ import { ServiceProvider } from '../providers/service/service';
     HomePage,
     MenuCategoryPage, 
     MenuLayoutPage, 
-    MenuDetailsPage, 
-    RecommendListPage, 
-    RecommendGridPage,  
+    MenuDetailsPage,  
   ],
   providers: [
     StatusBar,
