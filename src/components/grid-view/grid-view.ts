@@ -9,17 +9,16 @@ import { MenuDetailsPage } from '../../pages/menu-details/menu-details';
 })
 export class GridViewComponent {
 
-  @Input('name') name: string;
-  @Input('price') price: string;
-  @Input('image') image: string;
+  @Input('menu') menu: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     
   }
 
-  openMenuDetails() { 
-    this.navCtrl.setRoot(MenuDetailsPage);
-    
+  openMenuDetails(menu) { 
+    this.navCtrl.push(MenuDetailsPage, {
+      item: menu
+    });
   }
 
 }

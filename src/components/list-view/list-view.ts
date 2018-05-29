@@ -9,12 +9,16 @@ import { MenuDetailsPage } from '../../pages/menu-details/menu-details';
 })
 export class ListViewComponent {
 
-  @Input('name') name: string;
-  @Input('description') description: string;
-  @Input('price') price: string;
-  @Input('image') image: string;
+  @Input('menu') menu: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
+  }
+
+  openMenuDetails(menu) { 
+    this.navCtrl.push(MenuDetailsPage, {
+      item: menu
+    });
   }
 
 }
