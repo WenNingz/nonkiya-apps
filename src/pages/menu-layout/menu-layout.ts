@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { MenuDetailsPage } from '../menu-details/menu-details';
 import localizationData from '../../assets/data/localization';
 import { Subscription } from 'rxjs/Subscription';
 import { ServiceProvider }from '../../providers/service/service';
@@ -34,10 +33,6 @@ export class MenuLayoutPage {
     this.subs.forEach(sub => {
       sub.unsubscribe();
     })
-  }
-
-  openMenuDetails() { 
-    this.navCtrl.setRoot(MenuDetailsPage);
   }
 
 }

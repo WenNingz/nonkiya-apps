@@ -11,6 +11,9 @@ import { MenuLayoutPage } from '../pages/menu-layout/menu-layout';
 import { MenuDetailsPage } from '../pages/menu-details/menu-details';
 
 import { HeaderComponent } from '../components/header/header';
+import { GridViewComponent } from '../components/grid-view/grid-view';
+import { ListViewComponent } from '../components/list-view/list-view';
+
 import { ServiceProvider } from '../providers/service/service';
 
 @NgModule({
@@ -21,6 +24,8 @@ import { ServiceProvider } from '../providers/service/service';
     MenuLayoutPage, 
     MenuDetailsPage, 
     HeaderComponent, 
+    GridViewComponent, 
+    ListViewComponent, 
   ],
   imports: [
     BrowserModule,

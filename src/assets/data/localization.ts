@@ -11,7 +11,9 @@ export default {
           name: 'HandMake Soba', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ], 
           ingredients: [
             {
               name: 'Something',
@@ -25,7 +27,9 @@ export default {
           name: 'HandMade Soba', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -39,7 +43,9 @@ export default {
           name: 'Soba Shoyu', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -53,7 +59,9 @@ export default {
           name: 'Soba Ramen', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -67,7 +75,9 @@ export default {
           name: 'Soba Dake', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -89,7 +99,9 @@ export default {
           name: '手打ざる中華そば', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -103,7 +115,9 @@ export default {
           name: '手打山菜とろろぶっかけそば', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -117,7 +131,9 @@ export default {
           name: '手打山菜ぶっかけそば', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -131,7 +147,9 @@ export default {
           name: '手打山菜とろろそば', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -145,7 +163,9 @@ export default {
           name: '手打ざるそば', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
