@@ -28,7 +28,7 @@ export class MenuDetailsPage {
     this.category = navParams.get('category');
     this.item = navParams.get('item');
     // this.displayData= this.localization[this.category][this.currentLang];
-
+    console.log('WHATEV');
     console.log(this.item);
   }
 
