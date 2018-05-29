@@ -1,3 +1,26 @@
 <ion-content padding>
-  DETAILS
+  <ion-scroll scrollY="true" style="width: 100%; height: 100%">
+    <ion-grid  class="fullcenter">
+      <ion-list class="has-subheader makecenter"> 
+            <img src="{{item.imgd}}" alt="Photo">
+            <ion-grid  class="fullcenter">
+              <button ion-item class="item-thumbnail-left item-text-wrap">
+                <h2>{{item.namef}}</h2> 
+                <p>Price: <span>{{item.price}}</span>
+                <hr>
+                <h1>Description</h1>
+                <h3>{{item.description}}</h3>
+                <br>
+                <h1>Ingredients</h1>
+                <div class="flex">
+                  <div *ngFor ="let ingredient of item.ingredients">
+                      <img class="ingre" src="{{ingredient.img}}" alt="Photo">
+                      <h3>{{ingredient.namei}} :<span>{{ingredient.amount}}</span></h3>
+                  </div>
+                </div>
+              </button>
+          </ion-grid>
+      </ion-list>
+    </ion-grid>
+  </ion-scroll>
 </ion-content>
