@@ -43,6 +43,8 @@ page-menu-layout {
     .item h3 {
       color: #222;
       padding-left: 22%;
+      word-break: break-all !important;
+      white-space: pre-wrap;
     }
 
     .item p {

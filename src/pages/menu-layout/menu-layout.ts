@@ -36,8 +36,11 @@ export class MenuLayoutPage {
     })
   }
 
-  openMenuDetails() { 
-    this.navCtrl.setRoot(MenuDetailsPage);
+  openMenuDetails(menu) { 
+    this.navCtrl.push(MenuDetailsPage, {
+      category: this.category,
+      item: menu
+    });
   }
 
 }
