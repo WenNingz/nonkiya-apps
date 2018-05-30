@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { MenuDetailsPage } from '../menu-details/menu-details';
 import localizationData from '../../assets/data/localization';
 import { Subscription } from 'rxjs/Subscription';
 import { ServiceProvider }from '../../providers/service/service';
+
+import { MenuDetailsPage } from '../../pages/menu-details/menu-details';
 
 @Component({
   selector: 'page-menu-layout',
@@ -36,8 +37,5 @@ export class MenuLayoutPage {
     })
   }
 
-  openMenuDetails() { 
-    this.navCtrl.setRoot(MenuDetailsPage);
-  }
 
 }

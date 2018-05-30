@@ -8,27 +8,46 @@ export default {
       menus: [
         {
           id: 'M0001',
-          name: 'HandMake Soba', 
+          name: 'HandMake Soba A', 
           price: '600',
-          description: '', 
-          imgs: [], 
+          shortdesc: 'HandMake Soba its delicious ramen in Japan located in Okutama, its take about 2hour from Tokyo ..',
+          description: 'HandMake Soba its delicious ramen in Japan located in Okutama, with fresh hand made ramen, this handmake soba become the most populer food in Okutama, the Nonkiya Ramen shop its take about 2hour from Tokyo', 
+          imgs: './assets/imgs/category/coldRamenSqr.png', 
+          imgd: './assets/imgs/category/coldRamen.png', 
           ingredients: [
             {
-              name: 'Something',
-              img: '', 
-              amount: ''
+              namei: 'Carrots', 
+              amount: '10 ons',
+              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+            },
+            {
+              namei: 'Onions', 
+              amount: '10 ons',
+              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+            },
+            {
+              namei: 'Potatos', 
+              amount: '10 ons',
+              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+            },
+            {
+              namei: 'Garlics', 
+              amount: '10 ons',
+              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
             } 
           ]
         },
         {
           id: 'M0002',
-          name: 'HandMade Soba', 
+          namef: 'HandMake Soba B', 
           price: '600',
-          description: '', 
-          imgs: [], 
+          shortdesc: 'HandMake Soba its delicious ramen in Japan located in Okutama, its take about 2hour from Tokyo ..',
+          description: 'HandMake Soba its delicious ramen in Japan located in Okutama, with fresh hand made ramen, this handmake soba become the most populer food in Okutama, the Nonkiya Ramen shop its take about 2hour from Tokyo', 
+          imgs: './assets/imgs/category/coldRamenSqr.png', 
+          imgd: './assets/imgs/category/sugoiramen_tn.png', 
           ingredients: [
             {
-              name: 'Something',
+              namei: 'Something',
               img: '', 
               amount: ''
             } 
@@ -36,13 +55,15 @@ export default {
         },
         {
           id: 'M0003',
-          name: 'Soba Shoyu', 
+          namef: 'HandMake Soba C', 
           price: '600',
-          description: '', 
-          imgs: [], 
+          shortdesc: 'HandMake Soba its delicious ramen in Japan located in Okutama, its take about 2hour from Tokyo ..',
+          description: 'HandMake Soba its delicious ramen in Japan located in Okutama, with fresh hand made ramen, this handmake soba become the most populer food in Okutama, the Nonkiya Ramen shop its take about 2hour from Tokyo', 
+          imgs: './assets/imgs/category/coldRamenSqr.png', 
+          imgd: './assets/imgs/category/sugoiramen_tn.png', 
           ingredients: [
             {
-              name: 'Something',
+              namei: 'Something',
               img: '', 
               amount: ''
             } 
@@ -50,13 +71,15 @@ export default {
         },
         {
           id: 'M0004',
-          name: 'Soba Ramen', 
+          namef: 'HandMake Soba D', 
           price: '600',
-          description: '', 
-          imgs: [], 
+          shortdesc: 'HandMake Soba its delicious ramen in Japan located in Okutama, its take about 2hour from Tokyo ..',
+          description: 'HandMake Soba its delicious ramen in Japan located in Okutama, with fresh hand made ramen, this handmake soba become the most populer food in Okutama, the Nonkiya Ramen shop its take about 2hour from Tokyo', 
+          imgs: './assets/imgs/category/coldRamenSqr.png', 
+          imgd: './assets/imgs/category/sugoiramen_tn.png', 
           ingredients: [
             {
-              name: 'Something',
+              namei: 'Something',
               img: '', 
               amount: ''
             } 
@@ -64,13 +87,15 @@ export default {
         },
         {
           id: 'M0005',
-          name: 'Soba Dake', 
+          namef: 'HandMake Soba E', 
           price: '600',
-          description: '', 
-          imgs: [], 
+          shortdesc: 'HandMake Soba its delicious ramen in Japan located in Okutama, its take about 2hour from Tokyo ..',
+          description: 'HandMake Soba its delicious ramen in Japan located in Okutama, with fresh hand made ramen, this handmake soba become the most populer food in Okutama, the Nonkiya Ramen shop its take about 2hour from Tokyo', 
+          imgs: './assets/imgs/category/coldRamenSqr.png', 
+          imgd: './assets/imgs/category/sugoiramen_tn.png', 
           ingredients: [
             {
-              name: 'Something',
+              namei: 'Something',
               img: '', 
               amount: ''
             } 
@@ -89,7 +114,9 @@ export default {
           name: '手打ざる中華そば', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -103,7 +130,9 @@ export default {
           name: '手打山菜とろろぶっかけそば', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -117,7 +146,9 @@ export default {
           name: '手打山菜ぶっかけそば', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -131,7 +162,9 @@ export default {
           name: '手打山菜とろろそば', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
@@ -145,7 +178,9 @@ export default {
           name: '手打ざるそば', 
           price: '600',
           description: '', 
-          imgs: [], 
+          imgs: [
+            './assets/imgs/sugoiramen_tn.jpg'
+          ],
           ingredients: [
             {
               name: 'Something',
