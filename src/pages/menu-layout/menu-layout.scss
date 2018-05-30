@@ -1,7 +1,6 @@
 page-menu-layout {
   #view-btn {
-    .w-10 {
-      width: 10%;
+    .float-right {
       float:right;
     }
 
@@ -10,6 +9,8 @@ page-menu-layout {
       border-bottom-style: none;
       padding: 0 10px;
       background-color: #BFBFBF;
+      flex: none;
+      width: auto;
     }
 
     .segment-activated {
