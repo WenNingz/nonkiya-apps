@@ -1,7 +1,6 @@
 page-menu-layout {
   #view-btn {
-    .w-10 {
-      width: 10%;
+    .float-right {
       float:right;
     }
 
@@ -10,6 +9,8 @@ page-menu-layout {
       border-bottom-style: none;
       padding: 0 10px;
       background-color: #BFBFBF;
+      flex: none;
+      width: auto;
     }
 
     .segment-activated {
@@ -29,14 +30,13 @@ page-menu-layout {
     }
 
     .makecenter {
-      margin: 0px auto;
-      width: 682px;          
+      margin: 0px auto;         
     }
 
     .item h2 {
       font-size: 2rem;
       font-weight: bold;
-      color: #f53d3d;
+      color: #E27D4F;
       padding-left: 22%;
     }
 
@@ -52,16 +52,14 @@ page-menu-layout {
     }
 
     span {
-      color: #f53d3d;
+      color: #E27D4F;
     }
   }
 
   #grid-content {
     padding-left: 10%;
     padding-right: 10%;
-
     
-
     .card-content {
       padding: 0;
     }

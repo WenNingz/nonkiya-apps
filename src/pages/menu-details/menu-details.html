@@ -1,26 +1,60 @@
-<ion-content padding>
-  <ion-scroll scrollY="true" style="width: 100%; height: 100%">
-    <ion-grid  class="fullcenter">
-      <ion-list class="has-subheader makecenter"> 
-            <img src="{{item.imgd}}" alt="Photo">
-            <ion-grid  class="fullcenter">
-              <button ion-item class="item-thumbnail-left item-text-wrap">
-                <h2>{{item.namef}}</h2> 
-                <p>Price: <span>{{item.price}}</span>
-                <hr>
-                <h1>Description</h1>
-                <h3>{{item.description}}</h3>
-                <br>
-                <h1>Ingredients</h1>
-                <div class="flex">
-                  <div *ngFor ="let ingredient of item.ingredients">
-                      <img class="ingre" src="{{ingredient.img}}" alt="Photo">
-                      <h3>{{ingredient.namei}} :<span>{{ingredient.amount}}</span></h3>
-                  </div>
-                </div>
-              </button>
-          </ion-grid>
-      </ion-list>
-    </ion-grid>
-  </ion-scroll>
-</ion-content>
+<ion-scroll id="menu-details" scrollY="true" style="width: 100%; height: 100%">
+  <ion-grid>
+    <ion-row *ngIf="currentLang === 'EN'" align-items-center justify-content-center>
+      <ion-col col-12 col-sm-12 col-md-8 col-lg-8 align-self-center>
+        <ion-slides pager="true" autoplay="4000" loop="true" speed="2000">
+          <ion-slide *ngFor = "let img of item.imgs">
+            <img src="{{img}}">
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+      <ion-col col-12 col-sm-12 col-md-8 col-lg-8>
+        <h1>{{ item.name }}</h1>
+        <h3>Price: <span>{{ item.price }}</span></h3>
+        <hr />
+      </ion-col>
+      <ion-col col-12 col-sm-12 col-md-8 col-lg-8>
+        <h5>Description:</h5>
+        <p>{{ item.description }}</p>
+      </ion-col>
+      <ion-col col-12 col-sm-12 col-md-8 col-lg-8>
+          <h5>Ingredients:</h5>
+          <ion-slides slidesPerView="4">
+              <ion-slide *ngFor = "let ingredient of item.ingredients">
+                <img class="ingredient-img" src="{{ingredient.img}}">
+                <p>{{ ingredient.name }}: <span>{{ ingredient.amount }}</span></p>
+              </ion-slide>
+            </ion-slides>
+        </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="currentLang === 'JP'" align-items-center justify-content-center>
+        <ion-col col-12 col-sm-12 col-md-8 col-lg-8 align-self-center>
+          <ion-slides pager="true" autoplay="4000" loop="true" speed="2000">
+            <ion-slide *ngFor = "let img of item.imgs">
+              <img src="{{img}}">
+            </ion-slide>
+          </ion-slides>
+        </ion-col>
+        <ion-col col-12 col-sm-12 col-md-8 col-lg-8>
+          <h1>{{ item.name }}</h1>
+          <h3>値段: <span>{{ item.price }}</span></h3>
+          <hr />
+        </ion-col>
+        <ion-col col-12 col-sm-12 col-md-8 col-lg-8>
+          <h5>説明:</h5>
+          <p>{{ item.description }}</p>
+        </ion-col>
+        <ion-col col-12 col-sm-12 col-md-8 col-lg-8>
+            <h5>材料:</h5>
+            <ion-slides slidesPerView="4">
+                <ion-slide *ngFor = "let ingredient of item.ingredients">
+                  <img class="ingredient-img" src="{{ingredient.img}}">
+                  <p>{{ ingredient.name }}: <span>{{ ingredient.amount }}</span></p>
+                </ion-slide>
+              </ion-slides>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-scroll>
+
