@@ -17,22 +17,33 @@
   
     <div [ngSwitch]="viewStyle">
       <div id="list-style" *ngSwitchCase="'list-style'">
-        <ion-list *ngIf="currentLang === 'EN'" class="has-subheader makecenter"> 
-          <list-view *ngFor ="let menu of localization[category].EN.menus" [menu]="menu">
-          </list-view>
-        </ion-list>
-          
-        <ion-list *ngIf="currentLang === 'JP'" class="has-subheader makecenter"> 
-          <list-view *ngFor ="let menu of localization[category].JP.menus" [menu]="menu" >
-          </list-view>
-        </ion-list>
+        <ion-row>
+          <ion-col>
+            <ion-list *ngIf="currentLang === 'EN'" class="makecenter"> 
+              <list-view 
+                *ngFor ="let menu of localization[category].EN.menus" 
+                [menu]="menu" >
+              </list-view>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col>
+            <ion-list *ngIf="currentLang === 'JP'" class="makecenter"> 
+              <list-view 
+                *ngFor ="let menu of localization[category].JP.menus" 
+                [menu]="menu" >
+              </list-view>
+            </ion-list>
+          </ion-col>
+        </ion-row>  
       </div>
 
       <div id="grid-content" *ngSwitchCase="'grid-style'">
         <ion-row *ngIf="currentLang === 'EN'" justify-content-center >
           <ion-col *ngFor ="let menu of localization[category].EN.menus" col-12 col-sm-6 col-md-4 col-lg-4>
-            <grid-view [menu]="menu" >
-            </grid-view>
+            <grid-view [menu]="menu" ></grid-view>
           </ion-col>  
         </ion-row>
         <ion-row  *ngIf="currentLang === 'JP'" justify-content-center >
