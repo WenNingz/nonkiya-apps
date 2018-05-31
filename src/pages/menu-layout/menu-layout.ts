@@ -5,8 +5,6 @@ import localizationData from '../../assets/data/localization';
 import { Subscription } from 'rxjs/Subscription';
 import { ServiceProvider }from '../../providers/service/service';
 
-import { MenuDetailsPage } from '../../pages/menu-details/menu-details';
-
 @Component({
   selector: 'page-menu-layout',
   templateUrl: 'menu-layout.html',
