@@ -14,7 +14,9 @@ export default {
           description: '', 
           thumbnail: './assets/imgs/category/coldRamenSqr.png', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/category/coldRamen.png',
+            './assets/imgs/category/coldRamen.png',
+            './assets/imgs/category/coldRamen.png',
           ], 
           ingredients: [
             {
