@@ -18,24 +18,24 @@ export default {
           ], 
           ingredients: [
             {
-              name: 'Carrots', 
+              name: 'Potato', 
               amount: '10 ons',
-              img: '../../assets/imgs/ingredient/carrot.png',
+              img: './assets/imgs/ingredient/potato.png',
             },
             {
               name: 'Meat', 
               amount: '10 ons',
-              img: '../../assets/imgs/ingredient/meat.png',
+              img: './assets/imgs/ingredient/meat.png',
             },
             {
-              name: 'Potato', 
+              name: 'Carrot', 
               amount: '10 ons',
-              img: '../../assets/imgs/ingredient/potato.png',
+              img: './assets/imgs/ingredient/carrot.png',
             },
             {
               name: 'Tomato', 
               amount: '10 ons',
-              img: '../../assets/imgs/ingredient/tomat.png',
+              img: './assets/imgs/ingredient/tomat.png',
             } 
           ]
         },
@@ -140,9 +140,9 @@ export default {
           price: '‎六〇〇円',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/1.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/1.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -173,9 +173,9 @@ export default {
           price: '‎九五〇円',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/2.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/2.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -206,9 +206,9 @@ export default {
           price: '‎九〇〇円',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/3.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/3.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -224,9 +224,9 @@ export default {
           price: '‎八〇〇円',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/4.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/4.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -242,9 +242,9 @@ export default {
           price: '七〇〇円',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/5.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/5.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -271,9 +271,9 @@ export default {
           price: '‎¥950',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/1.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/1.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -289,9 +289,9 @@ export default {
           price: '‎¥900',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/2.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/2.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -307,9 +307,9 @@ export default {
           price: '‎¥800',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/3.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/3.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -325,9 +325,9 @@ export default {
           price: '‎¥750',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/4.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/4.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -343,9 +343,9 @@ export default {
           price: '‎¥800',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/5.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/5.1_Details.jpg'
           ], 
           ingredients: [
             {
