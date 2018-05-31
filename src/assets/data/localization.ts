@@ -4,40 +4,38 @@ export default {
       name: 'Cold Ramen',
       icon: './assets/imgs/cat01.png', 
       color: 'violet',
-      img: './assets/imgs/category/coldRamenSqr.png',
+      img: './assets/imgs/category/1.jpg',
       menus: [
         {
           id: 'M0001',
           name: '手打ざる中華そば', 
           price: '‎¥600',
-          shortdesc: '',
-          description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          shortdesc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form',
+          description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt anything embarrassing hidden in the middle of text.', 
+          thumbnail: './assets/imgs/menu/1.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png',
-            './assets/imgs/category/coldRamen.png',
-            './assets/imgs/category/coldRamen.png',
+            './assets/imgs/menu/1.1_Details.jpg'
           ], 
           ingredients: [
             {
-              name: 'Carrots', 
+              name: 'Potato', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/ingredient/potato.png',
             },
             {
-              name: 'Onions', 
+              name: 'Meat', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/ingredient/meat.png',
             },
             {
-              name: 'Potatos', 
+              name: 'Carrot', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/ingredient/carrot.png',
             },
             {
-              name: 'Garlics', 
+              name: 'Tomato', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/ingredient/tomat.png',
             } 
           ]
         },
@@ -47,9 +45,9 @@ export default {
           price: '‎¥950',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/2.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/2.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -80,9 +78,9 @@ export default {
           price: '‎¥900',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/3.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/3.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -98,9 +96,9 @@ export default {
           price: '‎¥800',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/4.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/4.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -116,9 +114,9 @@ export default {
           price: '‎¥700',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/5.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/5.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -134,7 +132,7 @@ export default {
       name: '冷たい麺',
       icon: './assets/imgs/cat01.png', 
       color: 'violet',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/1.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -142,9 +140,9 @@ export default {
           price: '‎六〇〇円',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/1.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/1.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -175,9 +173,9 @@ export default {
           price: '‎九五〇円',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/2.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/2.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -208,9 +206,9 @@ export default {
           price: '‎九〇〇円',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/3.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/3.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -226,9 +224,9 @@ export default {
           price: '‎八〇〇円',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/4.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/4.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -244,9 +242,9 @@ export default {
           price: '七〇〇円',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/5.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/5.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -265,7 +263,7 @@ export default {
       name: 'Hot Ramen',
       icon: './assets/imgs/cat02.png', 
       color: 'red',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/2.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -273,9 +271,9 @@ export default {
           price: '‎¥950',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/1.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/1.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -291,9 +289,9 @@ export default {
           price: '‎¥900',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/2.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/2.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -309,9 +307,9 @@ export default {
           price: '‎¥800',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/3.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/3.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -327,9 +325,9 @@ export default {
           price: '‎¥750',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/4.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/4.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -345,9 +343,9 @@ export default {
           price: '‎¥800',
           shortdesc: '',
           description: '', 
-          thumbnail: './assets/imgs/category/coldRamenSqr.png', 
+          thumbnail: './assets/imgs/menu/5.2_Thumb.jpg', 
           imgs: [
-            './assets/imgs/category/coldRamen.png'
+            './assets/imgs/menu/5.1_Details.jpg'
           ], 
           ingredients: [
             {
@@ -507,7 +505,7 @@ export default {
       name: '温かい麺',
       icon: './assets/imgs/cat02.png', 
       color: 'red',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/2.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -752,7 +750,7 @@ export default {
       name: 'Food',
       icon: '../assets/imgs/cat02.png', 
       color: 'green',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/3.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -922,7 +920,7 @@ export default {
       name: 'ご飯物',
       icon: './assets/imgs/cat02.png', 
       color: 'green',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/3.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -1095,7 +1093,7 @@ export default {
       name: 'Summer Only',
       icon: './assets/imgs/cat03.png', 
       color: 'orange',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/4.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -1175,7 +1173,7 @@ export default {
       name: '夏季限定',
       icon: './assets/imgs/cat03.png', 
       color: 'orange',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/4.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -1258,7 +1256,7 @@ export default {
       name: 'Ice Shaved',
       icon: './assets/imgs/cat03.png', 
       color: 'blue',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/5.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -1374,7 +1372,7 @@ export default {
       name: 'かき氷（夏季限定）',
       icon: './assets/imgs/cat03.png', 
       color: 'blue',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/5.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -1493,7 +1491,7 @@ export default {
       name: 'Drink',
       icon: './assets/imgs/cat03.png', 
       color: 'yellow',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/6.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -1717,7 +1715,7 @@ export default {
       name: 'お飲物',
       icon: './assets/imgs/cat03.png', 
       color: 'yellow',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/6.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -1944,7 +1942,7 @@ export default {
       name: 'A La Carte',
       icon: './assets/imgs/cat01.png', 
       color: 'amber',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/7.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -2078,7 +2076,7 @@ export default {
       name: '一品料理',
       icon: './assets/imgs/cat01.png', 
       color: 'amber',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/8.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -2215,7 +2213,7 @@ export default {
       name: 'Take Away',
       icon: './assets/imgs/cat01.png', 
       color: 'brown',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/8.jpg', 
       menus: [
         {
           id: 'M0001',
@@ -2277,7 +2275,7 @@ export default {
       name: 'お持ち帰り（生そば）',
       icon: './assets/imgs/cat01.png', 
       color: 'brown',
-      img: './assets/imgs/category/coldRamenSqr.png', 
+      img: './assets/imgs/category/8.png', 
       menus: [
         {
           id: 'M0001',
