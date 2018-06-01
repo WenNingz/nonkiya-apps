@@ -10,7 +10,8 @@ export default {
           id: 'M0001',
           name: 'Zazuru Chinese Noodles', 
           price: '‎¥600',
-          shortdesc: 'Zazuru Chinese (Zaru chuka) is a noodle dish which is eaten mainly in the Tohoku region . Eat Chinese noodles boiled and chilled, put on noodles. In the general dining room and the Chinese noodle shop in this area , it is usually placed with chilled Chinese in summer . In addition, Chinese noodles for bamboo shoots made by noodle producers are sold at supermarkets, etc. Also at home, it is a summer noodle dish often eaten side by side with somen . In Hokkaido it is called Zazaru', 
+          shortdesc: '', 
+          description: 'Zazuru Chinese (Zaru chuka) is a noodle dish which is eaten mainly in the Tohoku region . Eat Chinese noodles boiled and chilled, put on noodles. In the general dining room and the Chinese noodle shop in this area , it is usually placed with chilled Chinese in summer . In addition, Chinese noodles for bamboo shoots made by noodle producers are sold at supermarkets, etc. Also at home, it is a summer noodle dish often eaten side by side with somen . In Hokkaido it is called Zazaru', 
           thumbnail: './assets/imgs/menu/1.2_Thumb.jpg', 
           imgs: [
             './assets/imgs/menu/1.1_Details.jpg'
@@ -52,22 +53,22 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
             {
               name: 'Onions', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
             {
               name: 'Potatos', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
             {
               name: 'Garlics', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             } 
           ]
         },
@@ -85,7 +86,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         },
@@ -103,7 +104,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         },
@@ -121,7 +122,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         },
@@ -147,22 +148,22 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
             {
               name: 'Onions', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
             {
               name: 'Potatos', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
             {
               name: 'Garlics', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             } 
           ]
         },
@@ -180,22 +181,22 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
             {
               name: 'Onions', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
             {
               name: 'Potatos', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
             {
               name: 'Garlics', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             } 
           ]
         },
@@ -213,7 +214,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         },
@@ -231,7 +232,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         },
@@ -249,7 +250,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         },
@@ -278,7 +279,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -296,7 +297,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -314,7 +315,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -332,7 +333,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         },
@@ -350,7 +351,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -368,7 +369,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -386,7 +387,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -404,7 +405,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -422,7 +423,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -440,7 +441,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -458,7 +459,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -476,7 +477,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -494,7 +495,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -520,7 +521,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -538,7 +539,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -556,7 +557,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -574,7 +575,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         },
@@ -592,7 +593,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -610,7 +611,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -628,7 +629,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -646,7 +647,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -664,7 +665,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -682,7 +683,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -700,7 +701,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -718,7 +719,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -736,7 +737,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -747,7 +748,7 @@ export default {
   C0003: {
     EN: {
       name: 'Food',
-      icon: '../assets/imgs/cat02.png', 
+      icon: './assets/imgs/cat02.png', 
       color: 'green',
       img: './assets/imgs/category/3.jpg', 
       menus: [
@@ -765,7 +766,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -783,7 +784,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -801,7 +802,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -819,7 +820,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -837,7 +838,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -855,7 +856,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -873,7 +874,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -891,7 +892,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -909,7 +910,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -935,7 +936,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -953,7 +954,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -971,7 +972,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -989,7 +990,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1007,7 +1008,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1025,7 +1026,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1043,7 +1044,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1061,7 +1062,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1079,7 +1080,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1108,7 +1109,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1126,7 +1127,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1144,7 +1145,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1162,7 +1163,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1188,7 +1189,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1206,7 +1207,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1224,7 +1225,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1242,7 +1243,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1271,7 +1272,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1289,7 +1290,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1307,7 +1308,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1325,7 +1326,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1343,7 +1344,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1361,7 +1362,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1387,7 +1388,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1405,7 +1406,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1423,7 +1424,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1441,7 +1442,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1459,7 +1460,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1477,7 +1478,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1506,7 +1507,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1524,7 +1525,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1542,7 +1543,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1560,7 +1561,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1578,7 +1579,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1596,7 +1597,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1614,7 +1615,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1632,7 +1633,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1650,7 +1651,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1668,7 +1669,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1686,7 +1687,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1704,7 +1705,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1730,7 +1731,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1748,7 +1749,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1766,7 +1767,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1784,7 +1785,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1802,7 +1803,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1820,7 +1821,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1838,7 +1839,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1856,7 +1857,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1874,7 +1875,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1892,7 +1893,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1910,7 +1911,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1928,7 +1929,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1957,7 +1958,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1975,7 +1976,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -1993,7 +1994,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2011,7 +2012,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2029,7 +2030,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2047,7 +2048,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2065,7 +2066,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2091,7 +2092,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2109,7 +2110,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2127,7 +2128,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2145,7 +2146,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2163,7 +2164,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2181,7 +2182,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2199,7 +2200,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2228,7 +2229,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2246,7 +2247,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2264,7 +2265,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2290,7 +2291,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2308,7 +2309,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2326,7 +2327,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2354,7 +2355,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
@@ -2380,7 +2381,7 @@ export default {
             {
               name: 'Carrots', 
               amount: '10 ons',
-              img: '../../assets/imgs/category/sugoiramen_tn.jpg',
+              img: './assets/imgs/category/sugoiramen_tn.jpg',
             },
           ]
         }, 
