@@ -3,7 +3,6 @@ import { NavController, NavParams } from 'ionic-angular';
 
 import { MenuLayoutPage } from '../menu-layout/menu-layout';
 
-import data from '../../assets/data/categoryCode';
 import localizationData from '../../assets/data/localization';
 import { Subscription } from 'rxjs/Subscription';
 import { ServiceProvider }from '../../providers/service/service';
@@ -14,7 +13,7 @@ import { ServiceProvider }from '../../providers/service/service';
 })
 export class MenuCategoryPage {
 
-  categories: string[] = data;
+  categories: string[];
   localization: any = localizationData;
   subs: Subscription[] = [];
   currentLang: string = "";
