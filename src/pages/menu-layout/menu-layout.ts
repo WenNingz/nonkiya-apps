@@ -15,8 +15,8 @@ export class MenuLayoutPage {
   subs: Subscription[] = [];
   currentLang: string = "";
   viewStyle: string = "list-style";
-  isRecommend: boolean = false;
-
+  menus: any[] = [];
+S
   constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
     this.subs.push(
       this._service.currentLang$.subscribe(
@@ -27,6 +27,17 @@ export class MenuLayoutPage {
     )
     console.log('LAYOUT LANG:' + this.currentLang);
     this.category = navParams.get('category');
+    if(this.category === 'osusume') {
+      Object.keys(this.localization).forEach(cat => {
+        this.localization[cat].menus.forEach(menu => {
+          if(menu.recommend) {
+            this.menus.push(menu)
+          }
+        });
+      });
+    } else {
+      this.menus = this.localization[this.category].menus;
+    }
   }
 
   ionViewWillLeave(){
@@ -34,6 +45,4 @@ export class MenuLayoutPage {
       sub.unsubscribe();
     })
   }
-
-
 }

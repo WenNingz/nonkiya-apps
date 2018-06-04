@@ -18,14 +18,10 @@
         *ngFor="let category of categories" 
         (click)="openMenuList(category)"
       >
-        <div *ngIf="currentLang == 'EN'">
-          <img src="{{ localization[category].EN.icon }}" class="imageSize">
-          <span>{{ localization[category].EN.name }}</span>
+        <div>
+          <img src="{{ localization[category].icon }}" class="imageSize">
+          <span>{{ localization[category].name[currentLang] }}</span>
         </div>
-        <div *ngIf="currentLang == 'JP'">
-            <img src="{{ localization[category].EN.icon }}" class="imageSize">
-            <span>{{ localization[category].JP.name }}</span>
-          </div>
       </button>
     </ion-list>
   </ion-content>

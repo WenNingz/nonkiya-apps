@@ -32,7 +32,7 @@ export class HomePage {
 
   openRecommendMenu() { 
     this.navCtrl.push(MenuLayoutPage, {
-      category: 'Osusume', 
+      category: 'osusume', 
     });
   }
 

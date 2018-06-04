@@ -10,6 +10,7 @@ import { MenuDetailsPage } from '../../pages/menu-details/menu-details';
 export class GridViewComponent {
 
   @Input('menu') menu: any;
+  @Input('lang') lang: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     
