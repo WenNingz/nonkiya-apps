@@ -28,6 +28,7 @@ export class MenuCategoryPage {
       )
     )
     console.log('CATEGORY LANG:' + this.currentLang);
+    this.categories = Object.keys(this.localization);
   }
 
   ionViewWillLeave(){

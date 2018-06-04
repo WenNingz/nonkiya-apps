@@ -1,7 +1,7 @@
 <button ion-item class="item-thumbnail-left" 
 (click)="openMenuDetails(menu)">
   <img src="{{ menu.thumbnail }}" alt="Photo">
-  <h2>{{ menu.name }}</h2> 
-  <h3>{{ menu.shortdesc }}</h3>
-  <p>Price: <span>{{ menu.price }}</span>
+  <h2>{{ menu.name[lang] }}</h2> 
+  <h3>{{ menu.shortdesc[lang] }}</h3>
+  <p>Price: <span>{{ menu.price[lang] }}</span>
 </button>

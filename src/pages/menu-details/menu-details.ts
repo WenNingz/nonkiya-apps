@@ -9,11 +9,9 @@ import { ServiceProvider }from '../../providers/service/service';
   templateUrl: 'menu-details.html',
 })
 export class MenuDetailsPage {
-  category: string;
   localization: any = localizationData;
   subs: Subscription[] = [];
   currentLang: string = "";
-  displayData: any[];
   item;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private _service : ServiceProvider) {
@@ -24,12 +22,9 @@ export class MenuDetailsPage {
         }
       )
     )
-    // console.log('LAYOUT LANG:' + this.currentLang);
-    this.category = navParams.get('category');
+    console.log('DETAIL LANG:' + this.currentLang);
     this.item = navParams.get('item');
-    // this.displayData= this.localization[this.category][this.currentLang];
-    console.log('WHATEV');
-    console.log(this.item);
+
   }
 
   ionViewWillLeave(){

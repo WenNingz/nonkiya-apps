@@ -3,27 +3,13 @@
     <ion-row>
       <ion-col col-12 col-sm-6 col-md-3 col-lg-3 *ngFor ="let category of categories">
         <div class="card-background-page">
-          <ion-card class="card-box" *ngIf="currentLang == 'EN'" (click)="openMenuList(category)">
-            <img class="card-img" src="{{ localization[category].EN.img }}"/>
+          <ion-card class="card-box"  (click)="openMenuList(category)">
+            <img class="card-img" src="{{ localization[category].img }}"/>
             <div class="card-inner">
-              <div class="card-circle {{ localization[category].EN.color }}">
+              <div class="card-circle {{ localization[category].color }}">
                 <div class="card-wrapper">
                   <div class="card-content">
-                    <p class="card-title">{{ localization[category].EN.name }}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </ion-card>
-        </div>
-        <div class="card-background-page">
-          <ion-card class="card-box" *ngIf="currentLang == 'JP'" (click)="openMenuList(category)">
-            <img class="card-img" src="{{ localization[category].EN.img }}"/>
-            <div class="card-inner">
-              <div class="card-circle {{ localization[category].EN.color }}">
-                <div class="card-wrapper">
-                  <div class="card-content">
-                    <p class="card-title">{{ localization[category].JP.name }}</p>
+                    <p class="card-title">{{ localization[category].name[currentLang] }}</p>
                   </div>
                 </div>
               </div>

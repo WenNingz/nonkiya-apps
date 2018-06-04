@@ -7,7 +7,6 @@ import { HomePage } from '../pages/home/home';
 import { MenuCategoryPage } from '../pages/menu-category/menu-category';
 import { MenuLayoutPage } from '../pages/menu-layout/menu-layout'; 
 
-import data from '../assets/data/categoryCode';
 import localizationData from '../assets/data/localization';
 import { Subscription } from 'rxjs/Subscription';
 import { ServiceProvider }from '../providers/service/service';
@@ -23,7 +22,7 @@ export interface PageInterface {
   templateUrl: 'app.html'
 })
 export class MyApp {
-  categories: string[] = data;
+  categories: string[];
   localization: any = localizationData;
   subs: Subscription[] = [];
   currentLang: string = "";
@@ -36,7 +35,7 @@ export class MyApp {
   
   appPages: PageInterface[] = [
     { enTitle: 'Home', jpTitle: 'ホーム', component: HomePage, category: '' },
-    { enTitle: 'Recommend', jpTitle: 'おすすめ', component: MenuLayoutPage, category: 'Osusume' },
+    { enTitle: 'Recommend', jpTitle: 'おすすめ', component: MenuLayoutPage, category: 'osusume' },
     { enTitle: 'Menu', jpTitle: 'メニュー', component: MenuCategoryPage, category: '' },
   ];
 
@@ -57,6 +56,7 @@ export class MyApp {
         }
       )
     )
+    this.categories = Object.keys(this.localization);
   }
 
     initializeApp() {
